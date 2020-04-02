@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <table>
+        <thead>
+            <td>Username</td>
+            <td>Password</td>
+        </thead>
+        <tbody>
+            {% for dat in data %}
+            <tr>
+                <td>{{dat.username}}</td>
+                <td>{{dat.password}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
